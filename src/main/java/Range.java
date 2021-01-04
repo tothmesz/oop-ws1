@@ -2,9 +2,9 @@ public class Range {
     private int start;
     private int end;
 
-    public Range(int start, int end){
-        this.start = start;
-        this.end = end;
+    public Range(int range){
+        start = 0;
+        end = range;
 
         if (start > end){
             throw new IndexOutOfBoundsException();
@@ -12,20 +12,20 @@ public class Range {
     }
 
     public int getStart() {
-        return start;
+        return 0;
     }
 
-    public void setStart(int value) {
+    /*public void setStart(int value) {
         this.start = value;
-    }
+    }*/
 
     public int getEnd() {
         return end;
     }
 
-    public void setEnd(int value) {
+    /*public void setEnd(int value) {
         this.end = value;
-    }
+    }*/
 
     public int length(){
         return this.end - this.start;
